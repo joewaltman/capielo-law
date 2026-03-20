@@ -27,7 +27,7 @@ export default function AttorneyCard({
             <img
               src={attorney.image}
               alt={attorney.name}
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 w-full h-full object-cover object-[50%_25%]"
             />
           </div>
           <div className="flex-1 p-6 md:p-8 flex flex-col">
@@ -84,7 +84,7 @@ export default function AttorneyCard({
         <img
           src={attorney.image}
           alt={attorney.name}
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-[50%_25%]"
         />
       </div>
       <div className="p-6">
