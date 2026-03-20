@@ -18,11 +18,11 @@ export default function AttorneyCard({
       <Link
         href={`/attorneys/${attorney.slug}`}
         className={cn(
-          'group block bg-white rounded-xl border border-cream-200 shadow-sm overflow-hidden card-hover',
+          'group block h-full bg-white rounded-xl border border-cream-200 shadow-sm overflow-hidden card-hover',
           className
         )}
       >
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-2/5 aspect-[3/4] md:aspect-auto bg-cream-200 relative overflow-hidden">
             <img
               src={attorney.image}
@@ -30,14 +30,14 @@ export default function AttorneyCard({
               className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
-          <div className="flex-1 p-6 md:p-8">
+          <div className="flex-1 p-6 md:p-8 flex flex-col">
             <p className="text-sm text-accent-500 font-medium mb-1">
               {attorney.title}
             </p>
             <h3 className="font-display text-2xl font-semibold text-primary group-hover:text-accent-500 transition-colors">
               {attorney.name}
             </h3>
-            <p className="mt-3 text-text-muted leading-relaxed">
+            <p className="mt-3 text-text-muted leading-relaxed line-clamp-4">
               {attorney.shortBio}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -50,7 +50,7 @@ export default function AttorneyCard({
                 </span>
               ))}
             </div>
-            <div className="mt-6 inline-flex items-center text-accent-500 font-medium group-hover:text-accent-600">
+            <div className="mt-auto pt-6 inline-flex items-center text-accent-500 font-medium group-hover:text-accent-600">
               View Profile
               <svg
                 className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"

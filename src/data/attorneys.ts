@@ -5,7 +5,7 @@ export const attorneys: Attorney[] = [
     id: '1',
     slug: 'georg-capielo',
     name: 'Georg M. Capielo',
-    title: 'Founding Partner',
+    title: 'Partner',
     image: '/images/georg-capielo.jpg',
     shortBio: 'Georg leads the firm\'s civil litigation, civil appeals, and trial practice. With nearly two decades of litigation experience across California\'s state and federal courts, he has earned a reputation as a tenacious advocate and formidable adversary.',
     fullBio: [
