@@ -6,6 +6,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'understanding-california-probate-process',
     title: 'Understanding the California Probate Process: A Complete Guide',
     excerpt: 'Probate can seem daunting, but understanding the process helps families navigate it with confidence. Learn what to expect and how proper planning can simplify estate administration.',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
     content: `
 Losing a loved one is difficult enough without the added stress of navigating a complex legal process. Yet for many California families, probate becomes an unavoidable part of settling an estate. Understanding what probate involves can help you prepare for what lies ahead—or motivate you to plan in ways that avoid it altogether.
 
@@ -68,6 +69,7 @@ At Capielo Law Group, we help families on both sides of probate—creating plans
     slug: 'warning-signs-of-undue-influence-trust-contests',
     title: 'Warning Signs of Undue Influence in Trust and Will Disputes',
     excerpt: 'When estate plans suddenly change, undue influence may be at play. Learn to recognize the warning signs and understand your options for challenging suspicious documents.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
     content: `
 When a family member's estate plan unexpectedly changes—particularly when it favors a caregiver, new friend, or one child over others—it raises difficult questions. Was the change a genuine expression of their wishes, or did someone exert improper pressure? Understanding undue influence can help families recognize problems and seek appropriate remedies.
 
@@ -159,6 +161,7 @@ At Capielo Law Group, we represent families in trust and will contests when love
     slug: 'why-your-estate-plan-needs-regular-review',
     title: 'Why Your Estate Plan Needs Regular Review: Life Changes That Require Updates',
     excerpt: 'Creating an estate plan is just the first step. Regular reviews ensure your plan continues to reflect your wishes as life circumstances change.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
     content: `
 Congratulations—you've created an estate plan. Your trust is funded, your powers of attorney are signed, and your beneficiary designations are in order. Now you can file everything away and forget about it, right?
 

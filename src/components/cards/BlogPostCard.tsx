@@ -23,16 +23,24 @@ export default function BlogPostCard({
         )}
       >
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 aspect-video lg:aspect-auto bg-cream-200 relative">
-            <div className="absolute inset-0 flex items-center justify-center text-cream-400">
-              <svg
-                className="w-16 h-16"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
-              </svg>
-            </div>
+          <div className="lg:w-2/5 aspect-video lg:aspect-auto bg-cream-200 relative overflow-hidden">
+            {post.image ? (
+              <img
+                src={post.image}
+                alt={post.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center text-cream-400">
+                <svg
+                  className="w-16 h-16"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
+                </svg>
+              </div>
+            )}
           </div>
           <div className="flex-1 p-6 lg:p-8">
             <div className="flex items-center gap-3 text-sm text-text-muted">
@@ -73,10 +81,20 @@ export default function BlogPostCard({
           className
         )}
       >
-        <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-cream-200 flex items-center justify-center text-cream-400">
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
-          </svg>
+        <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-cream-200 overflow-hidden">
+          {post.image ? (
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-cream-400">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
+              </svg>
+            </div>
+          )}
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-xs text-text-muted">
@@ -98,12 +116,20 @@ export default function BlogPostCard({
         className
       )}
     >
-      <div className="aspect-video bg-cream-200 relative">
-        <div className="absolute inset-0 flex items-center justify-center text-cream-400">
-          <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
-          </svg>
-        </div>
+      <div className="aspect-video bg-cream-200 relative overflow-hidden">
+        {post.image ? (
+          <img
+            src={post.image}
+            alt={post.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-cream-400">
+            <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z" />
+            </svg>
+          </div>
+        )}
       </div>
       <div className="p-6">
         <div className="flex items-center gap-3 text-sm text-text-muted">
