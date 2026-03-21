@@ -71,7 +71,7 @@ export default function HomePage() {
                     circumstances.
                   </p>
                   <p>
-                    As a husband-and-wife team with complementary expertise, we
+                    As a brother-and-sister team with complementary expertise, we
                     offer the sophisticated legal capabilities of larger firms
                     while maintaining the personal relationships that matter. When
                     you work with us, you work directly with experienced partners

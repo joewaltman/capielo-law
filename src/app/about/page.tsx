@@ -26,7 +26,7 @@ export default function AboutPage() {
               <div className="prose prose-lg text-text-muted">
                 <p>
                   Capielo Law Group LLP was founded by Georg and Katie Capielo, a
-                  husband-and-wife team who shared a vision of practicing law
+                  brother-and-sister team who shared a vision of practicing law
                   differently. After years of experience at larger firms, they
                   recognized that many families weren&apos;t getting the
                   personalized attention their important legal matters deserved.
