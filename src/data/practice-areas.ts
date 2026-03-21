@@ -165,6 +165,90 @@ export const practiceAreas: PracticeArea[] = [
       },
     ],
   },
+  {
+    id: '5',
+    slug: 'trust-administration-probate',
+    title: 'Trust Administration & Probate',
+    shortDescription: 'Guiding trustees and executors through the complexities of estate administration with clarity and efficiency.',
+    icon: 'clipboard',
+    fullDescription: [
+      'Administering a trust or estate after a loved one\'s death involves navigating complex legal requirements while families are grieving. At Capielo Law Group, we guide trustees and executors through every step of the process, ensuring compliance with legal obligations while minimizing stress and delay.',
+      'Whether you\'re serving as a trustee for the first time or managing a complex estate with multiple beneficiaries, we provide the practical guidance you need. We help you understand your fiduciary duties, manage assets appropriately, communicate with beneficiaries, handle creditor claims, and make required tax filings.',
+      'When probate is necessary, we represent executors and administrators through the court process efficiently. Our goal is to help you fulfill your duties, protect yourself from personal liability, and distribute assets to beneficiaries as smoothly as possible.',
+    ],
+    services: [
+      'Trust Administration Guidance',
+      'Trustee Duties and Compliance',
+      'Probate Court Representation',
+      'Estate Inventories and Accountings',
+      'Creditor Claim Management',
+      'Beneficiary Communications',
+      'Trust and Estate Tax Filings',
+      'Asset Distribution',
+      'Small Estate Procedures',
+      'Ancillary Probate for Out-of-State Property',
+    ],
+    faqs: [
+      {
+        question: 'What are a trustee\'s main responsibilities?',
+        answer: 'Trustees must manage trust assets prudently, keep accurate records, provide accountings to beneficiaries, file required tax returns, pay valid debts and expenses, and distribute assets according to the trust terms. Trustees owe fiduciary duties of loyalty, impartiality, and prudent administration.',
+      },
+      {
+        question: 'How long does trust administration typically take?',
+        answer: 'Simple trust administrations may be completed in six months to a year. More complex matters—involving business interests, real property sales, tax issues, or beneficiary disputes—can take longer. Unlike probate, trust administration has no minimum timeline and can often proceed more quickly.',
+      },
+      {
+        question: 'When is probate required in California?',
+        answer: 'Probate is generally required when the deceased owned real property or assets exceeding $184,500 in their name alone (not in a trust or with beneficiary designations). Assets held in a living trust, jointly-owned property, and accounts with beneficiary designations typically avoid probate.',
+      },
+      {
+        question: 'Can a trustee be held personally liable?',
+        answer: 'Yes. Trustees who breach their fiduciary duties—such as by mismanaging assets, self-dealing, or failing to account—can be held personally liable to beneficiaries for resulting losses. This is why proper guidance during administration is essential.',
+      },
+    ],
+  },
+  {
+    id: '6',
+    slug: 'elder-law-litigation',
+    title: 'Elder Law Litigation',
+    shortDescription: 'Protecting vulnerable adults from financial abuse, neglect, and exploitation.',
+    icon: 'heart',
+    fullDescription: [
+      'Elder abuse takes many forms—financial exploitation, neglect, isolation, and undue influence. At Capielo Law Group, we are committed to protecting vulnerable adults and holding abusers accountable through aggressive litigation when necessary.',
+      'California law provides powerful remedies for elder abuse, including enhanced damages and attorney fee recovery. We represent victims and their families in pursuing claims against those who exploit the elderly, whether family members, caregivers, financial advisors, or others in positions of trust.',
+      'We also defend against conservatorship proceedings when they are being misused to gain control over an elder\'s assets, and we assist families seeking conservatorships when necessary to protect a loved one from harm or exploitation.',
+    ],
+    services: [
+      'Elder Financial Abuse Claims',
+      'Undue Influence Litigation',
+      'Conservatorship Proceedings',
+      'Care Custodian Abuse Cases',
+      'Isolation and Neglect Claims',
+      'Recovery of Misappropriated Assets',
+      'Restraining Orders for Elder Protection',
+      'Annulment of Fraudulent Transactions',
+      'Fiduciary Abuse Claims',
+      'Dependent Adult Abuse Litigation',
+    ],
+    faqs: [
+      {
+        question: 'What constitutes elder financial abuse under California law?',
+        answer: 'Elder financial abuse occurs when someone takes, hides, or uses an elder\'s property or assets for wrongful purposes or through undue influence. This includes theft, fraud, coercion, and taking advantage of a position of trust. California defines "elder" as anyone 65 or older.',
+      },
+      {
+        question: 'What remedies are available for elder abuse?',
+        answer: 'California\'s Elder Abuse Act provides strong remedies including recovery of the property taken, compensatory damages, attorney fees and costs, and in egregious cases, punitive damages. The ability to recover attorney fees makes it economically feasible to pursue cases that might otherwise be cost-prohibitive.',
+      },
+      {
+        question: 'What is a conservatorship?',
+        answer: 'A conservatorship is a court proceeding where a judge appoints someone to make decisions for an adult who cannot care for themselves or manage their finances. Conservatorships are sometimes necessary to protect vulnerable adults, but they can also be misused to gain control over someone\'s assets.',
+      },
+      {
+        question: 'How can I protect an elderly family member from exploitation?',
+        answer: 'Warning signs include sudden changes in financial documents, unexplained withdrawals, isolation from family, a new "friend" who is overly involved, and changes in estate plans. If you suspect abuse, document your concerns and consult an attorney promptly. Early intervention can prevent further harm.',
+      },
+    ],
+  },
 ];
 
 export function getPracticeAreaBySlug(slug: string): PracticeArea | undefined {

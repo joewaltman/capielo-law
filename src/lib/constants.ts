@@ -24,6 +24,8 @@ export const NAVIGATION: NavItem[] = [
     children: [
       { label: 'Trust & Estate Planning', href: '/practice-areas/trust-estate-planning' },
       { label: 'Trust & Estate Litigation', href: '/practice-areas/trust-estate-litigation' },
+      { label: 'Trust Administration & Probate', href: '/practice-areas/trust-administration-probate' },
+      { label: 'Elder Law Litigation', href: '/practice-areas/elder-law-litigation' },
       { label: 'Civil Appeals', href: '/practice-areas/civil-appeals' },
       { label: 'Civil Litigation', href: '/practice-areas/civil-litigation' },
     ],
@@ -43,6 +45,8 @@ export const FOOTER_LINKS = {
   practiceAreas: [
     { label: 'Trust & Estate Planning', href: '/practice-areas/trust-estate-planning' },
     { label: 'Trust & Estate Litigation', href: '/practice-areas/trust-estate-litigation' },
+    { label: 'Trust Administration & Probate', href: '/practice-areas/trust-administration-probate' },
+    { label: 'Elder Law Litigation', href: '/practice-areas/elder-law-litigation' },
     { label: 'Civil Appeals', href: '/practice-areas/civil-appeals' },
     { label: 'Civil Litigation', href: '/practice-areas/civil-litigation' },
   ],

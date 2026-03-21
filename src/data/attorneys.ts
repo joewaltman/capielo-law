@@ -71,10 +71,9 @@ export const attorneys: Attorney[] = [
     practiceAreas: [
       'Trust & Estate Litigation',
       'Estate Planning',
-      'Probate',
-      'Trust Administration',
+      'Trust Administration & Probate',
+      'Elder Law Litigation',
       'Conservatorships',
-      'Elder Abuse Litigation',
       'Fiduciary Accounting',
     ],
     email: 'katie@capielollp.com',
