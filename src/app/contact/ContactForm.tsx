@@ -4,6 +4,8 @@ import { useState, FormEvent } from 'react';
 import { Button, Input, Textarea, Select } from '@/components/ui';
 import { practiceAreas } from '@/data/practice-areas';
 
+const FORMSPREE_FORM_ID = 'mvzvoovj';
+
 interface FormData {
   firstName: string;
   lastName: string;
@@ -31,6 +33,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validateForm = (): boolean => {
     const newErrors: Partial<FormData> = {};
@@ -65,16 +68,39 @@ export default function ContactForm() {
     }
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Simulate form submission
-    console.log('Form submitted:', formData);
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          practiceArea: formData.practiceArea || 'Not specified',
+          preferredOffice: formData.preferredOffice || 'No preference',
+          message: formData.message,
+          howHeard: formData.howHeard || 'Not specified',
+        }),
+      });
 
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData(initialFormData);
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData(initialFormData);
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitError('There was a problem submitting your message. Please try again or call us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -220,6 +246,12 @@ export default function ContactForm() {
           { value: 'other', label: 'Other' },
         ]}
       />
+
+      {submitError && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+          {submitError}
+        </div>
+      )}
 
       <div className="pt-4">
         <Button type="submit" size="lg" disabled={isSubmitting} className="w-full sm:w-auto">
