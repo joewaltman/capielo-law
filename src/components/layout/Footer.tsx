@@ -141,8 +141,8 @@ export default function Footer() {
           <p className="mt-4 text-2xs text-cream-500 text-center md:text-left">
             The information on this website is for general informational purposes only and does not
             constitute legal advice. Use of this website or contact with the firm does not
-            create an attorney-client relationship. Testimonials and past results do not
-            guarantee, warrant, or predict the outcome of any particular matter.{' '}
+            create an attorney-client relationship. Past results do not guarantee, warrant,
+            or predict the outcome of any particular matter.{' '}
             <Link href="/disclaimer" className="underline hover:text-cream-300">
               Read our full disclaimer
             </Link>.

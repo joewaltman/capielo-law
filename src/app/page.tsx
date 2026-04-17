@@ -2,11 +2,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Hero, ConsultationCTA } from '@/components/sections';
 import { FadeInOnScroll } from '@/components/animations';
-import { PracticeAreaCard, AttorneyCard, TestimonialCard, LocationCard } from '@/components/cards';
+import { PracticeAreaCard, AttorneyCard, LocationCard } from '@/components/cards';
 import { Button } from '@/components/ui';
 import { practiceAreas } from '@/data/practice-areas';
 import { attorneys } from '@/data/attorneys';
-import { testimonials } from '@/data/testimonials';
 import { locations } from '@/data/locations';
 
 export const metadata: Metadata = {
@@ -133,28 +132,6 @@ export default function HomePage() {
             {attorneys.map((attorney, index) => (
               <FadeInOnScroll key={attorney.id} delay={index * 100}>
                 <AttorneyCard attorney={attorney} variant="featured" />
-              </FadeInOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <FadeInOnScroll>
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="heading-2 text-primary">What Our Clients Say</h2>
-              <p className="mt-4 body-large text-text-muted">
-                The trust our clients place in us is our greatest accomplishment.
-              </p>
-            </div>
-          </FadeInOnScroll>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(0, 3).map((testimonial, index) => (
-              <FadeInOnScroll key={testimonial.id} delay={index * 100}>
-                <TestimonialCard testimonial={testimonial} />
               </FadeInOnScroll>
             ))}
           </div>

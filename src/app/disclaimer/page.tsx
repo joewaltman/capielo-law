@@ -64,13 +64,7 @@ export default function DisclaimerPage() {
                   of the information contained on this website.
                 </p>
 
-                <h2 className="heading-3 text-primary mt-12">Testimonials and Past Results</h2>
-                <p>
-                  Any testimonials, case results, or client reviews displayed on this
-                  website represent the experiences of individual clients and do not
-                  constitute a guarantee, warranty, or prediction regarding the outcome
-                  of any future legal matter.
-                </p>
+                <h2 className="heading-3 text-primary mt-12">Past Results</h2>
                 <p>
                   Each legal matter is unique, and the outcome of any particular case
                   depends on a variety of factors, including the specific facts and
@@ -79,10 +73,10 @@ export default function DisclaimerPage() {
                   similar results in future cases.
                 </p>
                 <p>
-                  The testimonials and case results displayed on this website should not
-                  be interpreted as a promise or guarantee of a particular result in your
-                  case. Prospective clients should not make decisions about legal
-                  representation based solely on testimonials or past results.
+                  Any case results referenced on this website should not be interpreted
+                  as a promise or guarantee of a particular result in your case.
+                  Prospective clients should not make decisions about legal
+                  representation based solely on past results.
                 </p>
 
                 <h2 className="heading-3 text-primary mt-12">Jurisdictional Limitations</h2>
